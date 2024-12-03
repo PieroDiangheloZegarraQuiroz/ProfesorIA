@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfesorIA - Información</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilos para la barra de navegación */
+        .navbar {
+            background-color: #f5bd1c;
+            color: #333;
+            padding: 15px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Estilos para el formulario */
+        .form-container {
+            width: 50%;
+            /* Ajuste del ancho a tamaño medio (50%) */
+            margin: 20px auto;
+            /* Centrar el contenedor */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container button {
+            width: 60%;
+            padding: 10px;
+            background-color: #fff;
+            border: 2px solid purple;
+            color: purple;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #f0e6ff;
+        }
+
+        /* Botón Regresar */
+        #boton-regresar {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            background-color: #6c757d;
+            color: white;
+            border-radius: 4px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #boton-regresar:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <h1>ProfesorIA</h1>
+        <div>
+            <!-- El círculo de la parte superior derecha -->
+            <span
+                style="display: inline-block; width: 30px; height: 30px; background-color: #ccc; border-radius: 50%;"></span>
+        </div>
+    </div>
+
+    <!-- Contenedor del formulario -->
+    <div class="form-container">
+        <h2>Recopilado de información</h2>
+        <form>
+            <label for="grado">Grado de enseñanza</label>
+            <input type="text" id="grado" name="grado" required>
+
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" name="curso" required>
+
+            <label for="tema">Tema</label>
+            <input type="text" id="tema" name="tema" required>
+
+            <label for="nivel">Nivel de enseñanza</label>
+            <input type="text" id="nivel" name="nivel" required>
+
+            <label for="horas">Horas de enseñanza</label>
+            <input type="number" id="horas" name="horas" required>
+
+            <!-- Contenedor para centrar los botones -->
+            <div style="text-align: center;">
+                <button type="submit">Enviar parámetros</button>
+                <button style="margin-top: 10px;">Guardar retroalimentación</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Botón Regresar -->
+    <a href="inicio.html" id="boton-regresar">Regresar</a>
+
+</body>
+
+</html>

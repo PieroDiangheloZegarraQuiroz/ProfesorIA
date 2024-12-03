@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Texto con IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\pageAI.css">
+</head>
+<body>
+    <div class="back-button">
+        <a href="inicio.html" class="button-back">← Regresar</a>
+    </div>
+
+    <div class="container">
+        <h1>Profesor<span class="highlight">IA</span></h1>
+
+        <div id="chat">
+            <div id="messages"></div>
+        </div>
+
+        <form id="promptForm">
+            <input type="text" id="prompt" name="prompt" placeholder="Escribe aquí tu mensaje..." required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Spinner de carga y mensaje -->
+        <div class="spinner" id="spinner"></div>
+        <p id="loadingText">Generando texto, por favor espera...</p>
+    </div>
+
+    <script src="assets\js\appAI.js?v=3.5"></script>
+</body>
+</html>
